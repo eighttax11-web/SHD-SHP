@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>INICIAR SESIÓN</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form id="form" (ngSubmit)="login(form);" #form="ngForm">
+    <ion-item class="ion-margin-bottom" color="light">
+      <ion-input placeholder="USERNAME" type="text" [(ngModel)]="user.username" name="username" required></ion-input>
+    </ion-item>
+    <ion-button expand="block" type="submit">Iniciar</ion-button>
+  </form>
+</ion-content>

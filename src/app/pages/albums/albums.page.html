@@ -1,0 +1,11 @@
+<ion-header>
+  <app-header title="albums"></app-header>
+</ion-header>
+
+<ion-content>
+  <ion-list class="ion-margin">
+    <ion-item *ngFor="let album of albums" (click)="getAlbumById(album)">
+      <ion-label>{{ album.title }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

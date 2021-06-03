@@ -1,0 +1,11 @@
+<ion-card *ngFor="let photo of photos">
+  <ion-img [src]="photo.url"></ion-img>
+  <ion-card-content>
+    <ion-label>{{ photo.title }}</ion-label>
+  </ion-card-content>
+  <div class="photos-more">
+    <ion-button fill="clear" (click)="presentActionSheet(photo)">
+      <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+    </ion-button>
+  </div>
+</ion-card>

@@ -1,0 +1,14 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="albums"></ion-back-button>
+  </ion-buttons>
+  <ion-buttons slot="end">
+    <ion-button (click)="favoritos()">
+      <ion-icon name="star-sharp" size="large"></ion-icon>
+    </ion-button>
+    <ion-button (click)="logout()">
+      <ion-icon name="log-out-outline" size="large"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-title>{{ title }}</ion-title>
+</ion-toolbar>
